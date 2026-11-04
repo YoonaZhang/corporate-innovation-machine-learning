@@ -1,36 +1,40 @@
 # The Determinants of Corporate Innovation: A Machine Learning Approach
 
-Research materials on predicting corporate innovation and comparing the relative importance of firm and stakeholder characteristics.
+An undergraduate research project integrating innovation determinants from accounting, finance and management within a stakeholder-based framework. The study uses machine learning to compare which firm and stakeholder characteristics are most informative for predicting future R&D investment and invention patent output.
 
-## Research approach
+## Project at a glance
 
-- Construct firm-level variables informed by research literature and a stakeholder framework.
-- Compare gradient-boosted regression trees, random forests and an OLS baseline.
-- Evaluate out-of-sample performance using expanding training windows and later test years.
-- Use SHAP to examine predictive contributions and heterogeneous relationships.
+| Component | Scope |
+| --- | --- |
+| Data | CSMAR and CNRDS; Chinese A-share listed companies, 2012-2024 |
+| Analytical sample | 13,611 firm-year observations |
+| Features | 75 predictors across 11 categories |
+| Models | Gradient-boosted regression trees, random forests and OLS |
+| Evaluation | Forward-expanding time splits; out-of-sample R², MSE, RMSE and MAE |
+| Interpretation | SHAP feature and group importance, dependence patterns, interactions and temporal analysis |
 
-Predictive feature importance is interpreted as a property of the fitted models, not as proof of a causal effect.
+## Main findings
+
+GBRT performed best for both targets, with out-of-sample R² of **0.5428 for R&D investment intensity** and **0.4478 for invention patent output** (thesis, Table 4-2).
+
+The analysis identified different predictive patterns across the innovation process: employee and board characteristics were particularly informative for R&D inputs, while management, stock-market and supply-chain characteristics were more prominent for patent output. Firm fundamentals and government-related features were important across both targets.
+
+See the [research overview](docs/research-overview.md) for the research objectives, methodology, results and figures.
 
 ## Materials
 
 | Material | Link |
 | --- | --- |
 | Undergraduate thesis | [Read the thesis PDF](paper/corporate_innovation_thesis.pdf) |
-| Working Python notebook | [Models and SHAP analysis](notebooks/corporate_innovation_models.ipynb) |
+| Python analysis notebook | [Models and SHAP analysis](notebooks/corporate_innovation_models.ipynb) |
 | Stata preparation scripts | [Data preparation](stata/) |
-| Research overview | [Methods and project context](docs/research-overview.md) |
+| Research overview | [Objectives, methodology and findings](docs/research-overview.md) |
 | Research figures | [Figures](figures/) |
-
-## Version context
-
-The undergraduate thesis and working notebook are separate research artifacts. They may reflect different iterations, predictor sets, samples and results. The notebook and earlier notes should not be assumed to reproduce every thesis table. A single reconciled replication release has not yet been prepared.
-
-The notebook is provided as a working code artifact with source-data previews and outputs removed. Figures from the thesis completion materials are provided separately in the figures folder. Local paths have been changed to relative placeholders; the models have not been rerun for this upload.
 
 ## Data availability
 
-The underlying research uses third-party database materials. Raw exports, merged `.dta` files and spreadsheet datasets are not included. Local source data can be stored in the ignored `data` folder using the original authorized access route.
+The underlying research uses third-party database materials. Raw exports and merged research datasets are not redistributed in this repository. The thesis and figures present the research findings; the notebook and scripts provide supporting analytical code.
 
-## Attribution
+## Author
 
-The PDF is the undergraduate thesis supplied by Yunyi Zhang. The wider Corporate Innovation Research Program involved collaborative research; the presence of a file in this repository does not imply sole ownership of every upstream input or research task. The code, methods and thesis are presented with their respective version context.
+Yunyi Zhang, Beijing Institute of Technology. Undergraduate thesis, 2026.
