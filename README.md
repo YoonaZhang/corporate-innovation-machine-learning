@@ -19,13 +19,13 @@ Predictive feature importance is interpreted as a property of the fitted models,
 | Working Python notebook | [Models and SHAP analysis](notebooks/corporate_innovation_models.ipynb) |
 | Stata preparation scripts | [Data preparation](stata/) |
 | Research overview | [Methods and project context](docs/research-overview.md) |
-| Selected saved figures | [Figures](figures/) |
+| Research figures | [Figures](figures/) |
 
 ## Version context
 
 The undergraduate thesis and working notebook are separate research artifacts. They may reflect different iterations, predictor sets, samples and results. The notebook and earlier notes should not be assumed to reproduce every thesis table. A single reconciled replication release has not yet been prepared.
 
-The notebook is provided as a working code artifact with source-data previews and outputs removed. Selected aggregate figures are preserved separately. Local paths have been changed to relative placeholders; the models have not been rerun for this upload.
+The notebook is provided as a working code artifact with source-data previews and outputs removed. Figures from the thesis completion materials are provided separately in the figures folder. Local paths have been changed to relative placeholders; the models have not been rerun for this upload.
 
 ## Data availability
 

@@ -13,14 +13,39 @@ Identify which groups of corporate and stakeholder characteristics are most usef
 
 ## Reading the materials
 
-The thesis is the primary long-form research document. The notebook, scripts and saved figures are working artifacts from the broader project and may correspond to different versions. Predictor counts and sample sizes should be interpreted within the specific artifact, target and filtering rules. Selected figures below come from saved notebook outputs, not a new execution or an assertion that they match the thesis tables exactly.
+The thesis is the primary long-form research document. The notebook, scripts and saved figures are working artifacts from the broader project and may correspond to different versions. Predictor counts and sample sizes should be interpreted within the specific artifact, target and filtering rules. The figures below were supplied from the thesis completion materials. They are presented as existing research artifacts, not a new model execution; version-specific details should be read alongside the thesis and working code.
 
-## Selected saved figures
+## Research figures
 
-![Saved figure from working notebook cell 4, output 1](../figures/working-notebook-cell-4-figure-1.png)
+### Research contribution
 
-![Saved figure from working notebook cell 5, output 1](../figures/working-notebook-cell-5-figure-1.png)
+![Research contribution](../figures/1%20research_contribution.png)
 
-![Saved figure from working notebook cell 5, output 2](../figures/working-notebook-cell-5-figure-2.png)
+### Research methodology
 
-![Saved figure from working notebook cell 5, output 3](../figures/working-notebook-cell-5-figure-3.png)
+![Research methodology](../figures/2%20research_methodology.png)
+
+### Training and testing sample split
+
+![Training and testing sample split](../figures/3%20training_testing_sample_split.jpg)
+
+### Feature-group importance: figure 1
+
+![Feature-group importance: figure 1](../figures/4%20feature_group_importance_1.jpg)
+
+### Feature-group importance: figure 2
+
+![Feature-group importance: figure 2](../figures/5%20feature_group_importance_2.jpg)
+
+### Individual feature importance
+
+![Individual feature importance](../figures/6%20individual_feature_importance.png)
+
+### Feature SHAP values: figure 1
+
+![Feature SHAP values: figure 1](../figures/7%20feature_shap_value_1.jpg)
+
+### Feature SHAP values: figure 2
+
+![Feature SHAP values: figure 2](../figures/8%20feature_shap_value_2.jpg)
+
